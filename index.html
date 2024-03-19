@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race</title>
+    <style>
+        .box{
+            border: 7px solid black;
+            width: 90%;
+            height: 680px;
+            background: linear-gradient(skyblue, green);
+            margin-left: 5%;
+        }
+        .sun{
+            margin-left: 30%;
+
+        }
+        .rab{
+            margin-top: 90px;
+            display: flex;
+        }
+        input:checked~.rab{
+            translate: 580px;
+            transition: all 4s 1s ease-in-out;
+
+        }
+        .car{
+            margin-top: -20%;
+            margin-left: 50%;
+            
+        }
+
+        .tor{
+            margin-top: 4%;
+            display: inline;
+        }
+        input:checked~.tor{
+            translate: 1200px;
+            transition: all 12s 1s ease-in-out;
+
+        }
+        .fin{
+            margin-left: 80%;
+            margin-top: -45%;
+            
+        }
+        .butter{
+            margin-left: 20%;
+        }
+        input:checked~.butter{
+            translate: 100px;
+            transition: all  4s ease-in-out;
+
+        }
+        .grass{
+            margin-top: -20%;
+            margin-bottom: -3%;
+            
+        }
+        input:checked~#gra1{
+            translate: 100px;
+            transition: all  6s ease-in-out;
+           
+        }
+        input:checked~#gra2{
+            translate: -100px;
+            transition: all  6s ease-in-out;
+           
+        }
+        input:checked~#gra4{
+            translate: 100px;
+            transition: all  6s ease-in-out;
+           
+        }
+        input:checked~#gra5{
+            translate: -100px;
+            transition: all  6s ease-in-out;
+           
+        }
+        input:checked~#gra3{
+           width: 300px;
+           translate: -50px;
+           transition: all  10s ease-in-out;
+        }
+        
+        input:checked~.sun{
+            translate: 50px;
+            transition: all 2s 1s ease-in-out;
+        }
+        
+    </style>
+</head>
+<body>
+    <marquee style="font-size: 36px; text-shadow: 3px 3px yellowgreen;" behavior="alternate"><b>...Rabbit Tortoise Race...</b></marquee>
+    <div class="box">
+        <input type="radio" value="clickme">
+        <img class="butter" src="./Images/butterflies.png" height="150px" width="150px">
+        <img class="sun" src="./Images/sun.png" height="150px" width="150px">
+        <img class="rab" src="./Images/easter-bunny.png" height="150px" width="150px">
+     <img class="car" src="./Images/carrot.png" height="50px" width="50px"><br>
+
+        <img class="tor" src="./Images/turtle.png" height="150px" width="150px">
+        <img class="fin" src="./Images/goal.png" height="400px" width="280px">
+        <img class="grass" id="gra1" src="./Images/grass.png" height="100px" width="280px">
+        <img class="grass" id="gra2" src="./Images/grass.png" height="100px" width="280px">
+        <img class="grass" id="gra3" src="./Images/grass.png" height="100px" width="280px">
+        <img class="grass" id="gra4" src="./Images/grass.png" height="100px" width="280px">
+        <img class="grass" id="gra5" src="./Images/grass.png" height="100px" width="200px">
+    </div>
+</body>
+</html>
